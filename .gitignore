@@ -1,0 +1,33 @@
+# Created by .ignore support plugin (hsz.mobi)
+### VisualStudioCode template
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### macOS template
+# General
+*.DS_Store
+
+# IntelliJ
+out/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# mkdocs documentation
+/site
+
+.idea
+node_modules
+bin_output
+logs
+
+dist/
+localchain/chaindata
+secrets.txt
