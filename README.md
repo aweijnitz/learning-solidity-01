@@ -205,3 +205,7 @@ Stop the miner
     > miner.stop()
     true
     
+## Links
+
+- [Geth](https://geth.ethereum.org/)
+- [Ganache](http://truffleframework.com/ganache/) is a prepackaged personal blockchain for development (I opted not to use this, since I believe in learning the basics first)
