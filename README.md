@@ -27,6 +27,13 @@ No need to understand anything, just run these commands
 Now you have a locally running node. See [genesis.json](localchain/genesis.json) for the config details, including 
 three initial test accounts with balances.
 
+**Check the node is responding on JSON-RPC**
+The node listens for JSON-RPC calls at [http://127.0.0.1:8545](http://127.0.0.1:8545)
+
+You can use __curl__ to connect to it and run calls to the chain. A full list of methods is available in the [JSON-RPC documentation](https://github.com/ethereum/wiki/wiki/JSON-RPC#json-rpc-methods).
+
+    curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","method":"net_version","params":"[]","id":"67"}' 127.0.0.1:8545
+
 **Connect and open interactive console to local network**
 
     geth attach localchain/chaindata/geth.ipc
@@ -208,4 +215,5 @@ Stop the miner
 ## Links
 
 - [Geth](https://geth.ethereum.org/)
+- [JSON-RPC documentation](https://github.com/ethereum/wiki/wiki/JSON-RPC#json-rpc-methods)
 - [Ganache](http://truffleframework.com/ganache/) is a prepackaged personal blockchain for development (I opted not to use this, since I believe in learning the basics first)
